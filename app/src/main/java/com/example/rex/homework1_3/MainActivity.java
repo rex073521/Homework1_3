@@ -16,7 +16,6 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
     private TextView teamText;
     public int i = 0;
 
-    //test push
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,11 +25,12 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
 
     public void findViews() {
         imageView = (ImageView) findViewById(R.id.imageView);
-        teamText=(TextView)findViewById(R.id.teamText);
+        teamText = (TextView) findViewById(R.id.teamText);
         backBtn = (Button) findViewById(R.id.backBtn);
         nextBtn = (Button) findViewById(R.id.nextBtn);
         backBtn.setOnClickListener(this);
         nextBtn.setOnClickListener(this);
+    }
 
     public void onClick(View v) {
         switch (v.getId()) {
@@ -48,6 +48,7 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
                 break;
         }
     }
+
 
     public void getImage() {
         switch (i) {
@@ -94,7 +95,7 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         }
     }
 
-}
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
